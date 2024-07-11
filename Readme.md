@@ -1,5 +1,13 @@
+# 使用该仓库同步项目进度
+
+1. 推荐使用```Markdown```来记录，最终方便展示和提交，大体框架如下
+2. 推荐使用```ChatGPT```，帮助生成代码、解决疑问
+3. 推荐但不限于的搜集文献网站：[谷歌学术](https://scholar.google.com.hk/?hl=zh-CN) [arxiv](https://arxiv.org/)
+4. git常用指令网站（可供参考）： [git简易指南](https://www.bootcss.com/p/git-guide/)
+
 # 工业控制场景下滤波器算法研究
 
+- [使用该仓库同步项目进度](#使用该仓库同步项目进度)
 - [工业控制场景下滤波器算法研究](#工业控制场景下滤波器算法研究)
   - [Requirements](#requirements)
   - [1.一阶滤波](#1一阶滤波)
@@ -27,6 +35,12 @@
   - [15.巴特沃兹滤波器](#15巴特沃兹滤波器)
 
 ## Requirements
+
+自动生成 ```requirements.txt```:
+
+```pip freeze > requirements.txt```
+
+项目支持环境（commited time: 2024.7.11）
 
 ```pip install -r requirements.txt```
 
