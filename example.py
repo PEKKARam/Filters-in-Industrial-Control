@@ -34,3 +34,4 @@ hpf = HighPassFilter(alpha=0.1)
 data = [1, 2, 3, 4, 5]  # 输入数据
 filtered_data = [hpf.filter(x) for x in data]
 print(filtered_data)
+
