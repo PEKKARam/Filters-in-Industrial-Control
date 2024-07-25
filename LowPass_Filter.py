@@ -26,4 +26,4 @@ for alpha, mse in zip(alpha_values, mse_values):
     print(f"alpha={alpha} MSE: {mse}")
 
 # Plot comparison
-plot_comparison(signal, filtered_signals, alpha_values)
+plot_comparison(signal, filtered_signals, alpha_values, 'Low Pass')

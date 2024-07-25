@@ -23,4 +23,4 @@ alpha_values = [0.1, 0.3, 0.5]
 filtered_signals = [filter_high_pass(signal, alpha) for alpha in alpha_values]
 
 # Plot comparison
-plot_comparison(signal, filtered_signals, alpha_values)
+plot_comparison(signal, filtered_signals, alpha_values, 'High Pass')
