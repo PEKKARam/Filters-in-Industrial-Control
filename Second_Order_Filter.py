@@ -17,11 +17,13 @@ def butter_lowpass_filter(data, cutoff, fs, order=2):
     y = lfilter(b, a, data)
     return y
 
+# 从CSV文件中读取数据
+data_df = pd.read_csv('data.csv')
+data = data_df['PV'].values 
+
 # 示例使用
 fs = 500.0  # 采样频率
 cutoff = 50.0  # 截止频率
-t = np.arange(0, 1, 1/fs)  # 时间向量
-data = np.sin(2 * np.pi * 1.2 * t) + 1.5 * np.cos(2 * np.pi * 3.5 * t) + 0.5 * np.sin(2 * np.pi * 20 * t)  # 示例信号
 
 # 生成不同alpha值的滤波信号
 alpha_values = [0.1, 0.5, 0.9]

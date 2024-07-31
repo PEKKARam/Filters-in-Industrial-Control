@@ -1,6 +1,7 @@
 from filter_package import *
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 def filter_high_pass(signal, alpha):
     """
@@ -14,9 +15,13 @@ def filter_high_pass(signal, alpha):
         filtered_signal[i] = alpha * (filtered_signal[i-1] + signal[i] - signal[i-1])
     return filtered_signal
 
+data = pd.read_csv("d:/我的资料/2024暑期实习材料/Filters in Industrial Control Project/data.csv")
+signal = data['PV'].values
+time = data['time'].values
+
 # Example usage
-time = np.linspace(0, 10, 100)
-signal = np.sin(time) + np.random.normal(0, 0.5, len(time))
+# time = np.linspace(0, 10, 100)
+# signal = np.sin(time) + np.random.normal(0, 0.5, len(time))
 
 # Apply the filter
 alpha_values = [0.1, 0.3, 0.5]
