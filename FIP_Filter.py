@@ -19,7 +19,7 @@ class FIPFilter:
 
 # 从CSV文件中读取数据
 data_df = pd.read_csv('data.csv')
-data = data_df['PV'].values  # 假设CSV文件中有一列名为'signal'
+data = data_df['PV'].values
 
 # 初始化FIP滤波器
 fip_filter = FIPFilter()
