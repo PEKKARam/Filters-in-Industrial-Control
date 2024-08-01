@@ -19,7 +19,7 @@ class SmithFilter:
 
 # 从CSV文件中读取数据
 data_df = pd.read_csv('data.csv')
-data = data_df['PV'].values  # 假设CSV文件中有一列名为'PV'
+data = data_df['PV'].values
 
 # 初始化Smith滤波器
 smith_filter = SmithFilter()
