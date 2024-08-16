@@ -3,9 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import MeanShift
 from sklearn.cluster import estimate_bandwidth
-from sklearn.metrics import mean_squared_error, mean_absolute_error
-from scipy.fft import fft
-from statsmodels.graphics.tsaplots import plot_acf
+from sklearn.metrics import mean_squared_error
 
 # statsmodels
 def evaluate_filtering(original_data, filtered_data):
