@@ -11,5 +11,8 @@ def get_filter_function(filter_name):
     elif filter_name == 'Chebyshev':
         from Chebyshev.chebyshev_filter import apply_chebyshev_filter
         return apply_chebyshev_filter
+    elif filter_name == 'Butterworth':
+        from Butterworth.butterworth_filter import apply_butterworth_filter
+        return apply_butterworth_filter
     else:
         raise ValueError(f"Unsupported filter: {filter_name}")
