@@ -32,7 +32,7 @@ filtered_signals = []
 mse_values = []
 
 for alpha in alpha_values:
-    fip_filter.set_alpha(alpha)  # 假设FIPFilter有一个设置alpha值的方法
+    fip_filter.set_alpha(alpha)
     filtered_signal = fip_filter.apply(data)
     filtered_signals.append(filtered_signal)
     mse = filter_evaluate_mse(data, filtered_signal)
