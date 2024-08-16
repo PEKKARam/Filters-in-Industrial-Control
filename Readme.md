@@ -174,11 +174,7 @@
 
 ## Requirements
 
-自动生成 ``requirements.txt``:
-
-``pip freeze > requirements.txt``
-
-项目支持环境（commited time: 2024.7.11）
+项目支持环境
 
 ``pip install -r requirements.txt``
 
